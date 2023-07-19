@@ -47,6 +47,15 @@ We have some interesting assumptions based on the problem description noted earl
 ---
 10 models were evaluated using ROC AUC as the evaluation metric to measure the models' performance in predicting the positive class. It was found that the `Gradient Boosting Classifier - Hyperparameter Tuning model with SMOTE dataset` achieved the highest ROC AUC score of 91% when considering all classes with consideration of not underfitting or overfitting. This model demonstrated exceptional predictive power in distinguishing between the positive and negative classes by obtaining the top 3 predictors namely Title_MR, Pclass, and Sex based on the results of the SHAP Value.
 
+## Conclusion
+---
+
+Based on the knowledge from SHAP Value that the most influential features in determining the likelihood of survival from the Titanic dataset are title_mr, pclass, and sex, we can draw several conclusions about "what sorts of people were more likely to survive?".
+1. title_mr: Passengers with the title "Mr." (likely adult male passengers) have a lower chance of survival. This title may indicate that they are adult male passengers who possibly prioritized women and children during the evacuation. This could lead to a lower survival rate for passengers with the title "Mr."
+2. pclass: Passengers in higher classes (pclass=1) have a higher chance of survival compared to passengers in lower classes (pclass=2 or pclass=3). Passengers in higher classes likely have better access to facilities and lifeboats, and they might be given priority during the evacuation.
+3. sex: Female passengers have a higher chance of survival compared to male passengers. This might reflect the implementation of the "Women and Children First" evacuation policy, where women are given priority during emergency evacuations.
+
+
 ## Insights & Recommendation
 ---
 
